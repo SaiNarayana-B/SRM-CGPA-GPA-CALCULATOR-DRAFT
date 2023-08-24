@@ -30,6 +30,7 @@
 
         /* Hero styles */
         .hero {
+            position: relative;
             background-color: #f9f9f9;
             padding: 40px 0;
             text-align: center;
@@ -38,6 +39,17 @@
         .hero img {
             max-width: 100%;
             height: auto;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
         }
 
         /* Features */
@@ -87,13 +99,13 @@
 
 <body>
     <!-- Menu Bar -->
-<div class="navbar">
-    <a href="index.html">Home</a> <!-- Linking to the homepage itself -->
-    <a href="gpa-calculator.html">GPA Calculator</a>
-    <a href="cgpa-calculator.html">CGPA Calculator</a>
-    <a href="about.html">About</a> <!-- Linking to an about page (create this page) -->
-    <a href="contact.html">Contact</a> <!-- Linking to a contact page (create this page) -->
-</div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gpa-calculator.html">GPA Calculator</a>
+        <a href="cgpa-calculator.html">CGPA Calculator</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <div class="container">
         <!-- Hero Section -->
@@ -151,4 +163,3 @@
 </body>
 
 </html>
-
