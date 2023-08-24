@@ -1,7 +1,7 @@
 /* Define variables for reusable values */
 :root {
-    --light-primary-color: #007BFF;
-    --light-primary-hover-color: #0056b3;
+    --light-primary-color: linear-gradient(to right, #007BFF, #00BFFF); /* Gradient for light primary color */
+    --light-primary-hover-color: linear-gradient(to right, #0056b3, #0099cc); /* Gradient for light primary hover color */
     --dark-primary-color: #222;
     --dark-primary-hover-color: #444;
     --background-light: #f3f4f6;
@@ -35,14 +35,14 @@ body.dark-mode {
 
 /* Styles for the header */
 header {
-    background-color: var(--light-primary-color);
+    background: var(--light-primary-color); /* Use gradient background for header */
     color: #ffffff;
     padding: 20px 0;
 }
 
 /* Styles for the navigation menu */
 nav {
-    background-color: var(--light-primary-color);
+    background: var(--light-primary-color); /* Use gradient background for navigation menu */
     padding: 10px 0;
 }
 
@@ -84,7 +84,7 @@ nav a:hover {
     padding: var(--link-padding);
     margin: var(--link-margin);
     border-radius: 4px;
-    background-color: var(--light-primary-color);
+    background: var(--light-primary-color); /* Use gradient background for links */
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -92,7 +92,7 @@ nav a:hover {
 
 /* Hover effect for links */
 .links a:hover {
-    background-color: var(--light-primary-hover-color);
+    background: var(--light-primary-hover-color); /* Use gradient background for link hover */
 }
 
 /* Dark Mode Styles for Links */
@@ -104,4 +104,3 @@ body.dark-mode .links a {
 body.dark-mode .links a:hover {
     background-color: var(--dark-primary-hover-color);
 }
-
