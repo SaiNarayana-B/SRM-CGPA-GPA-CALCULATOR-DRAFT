@@ -1,8 +1,13 @@
 /* Define variables for reusable values */
 :root {
-    --primary-color: #007BFF;
-    --primary-hover-color: #0056b3;
-    --background-color: #f3f4f6;
+    --light-primary-color: #007BFF;
+    --light-primary-hover-color: #0056b3;
+    --dark-primary-color: #222;
+    --dark-primary-hover-color: #444;
+    --background-light: #f3f4f6;
+    --background-dark: #1e1e1e;
+    --text-light: #333;
+    --text-dark: #ddd;
     --container-background: #ffffff;
     --container-padding: 30px;
     --container-border-radius: 8px;
@@ -15,21 +20,29 @@
 /* Apply styles to the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--background-light);
     text-align: center;
     padding: 50px 0;
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
 }
 
 /* Styles for the header */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--light-primary-color);
     color: #ffffff;
     padding: 20px 0;
 }
 
 /* Styles for the navigation menu */
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--light-primary-color);
     padding: 10px 0;
 }
 
@@ -52,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--primary-hover-color);
+    color: var(--light-primary-hover-color);
 }
 
 /* Styles for the container */
@@ -71,7 +84,7 @@ nav a:hover {
     padding: var(--link-padding);
     margin: var(--link-margin);
     border-radius: 4px;
-    background-color: var(--primary-color);
+    background-color: var(--light-primary-color);
     color: #ffffff;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -79,23 +92,15 @@ nav a:hover {
 
 /* Hover effect for links */
 .links a:hover {
-    background-color: var(--primary-hover-color);
+    background-color: var(--light-primary-hover-color);
 }
 
-/* Styles for a call-to-action button */
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin-top: 20px;
-    border-radius: 4px;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+/* Dark Mode Styles for Links */
+body.dark-mode .links a {
+    background-color: var(--dark-primary-color);
 }
 
-/* Hover effect for the call-to-action button */
-.cta-button:hover {
-    background-color: var(--primary-hover-color);
+/* Dark Mode Hover effect for links */
+body.dark-mode .links a:hover {
+    background-color: var(--dark-primary-hover-color);
 }
