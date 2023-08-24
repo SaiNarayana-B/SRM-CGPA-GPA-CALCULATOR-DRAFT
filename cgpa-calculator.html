@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cgpa-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SRM CGPA Calculator</h1>
+
+        <div>
+            <label for="regulation">Select Regulation:</label>
+            <select id="regulation">
+                <option value="2018">2018</option>
+                <option value="2021">2021</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="course">Select Course:</label>
+            <select id="course">
+                <!-- The course options will be dynamically filled based on the selected regulation -->
+            </select>
+        </div>
+
+        <div class="semester-input">
+            <label for="semester1">Semester 1 GPA:</label>
+            <input type="number" id="semester1" step="0.01" min="0" max="4.0" required>
+        </div>
+
+        <div id="additional-semesters">
+            <!-- Additional semester inputs will be added here -->
+        </div>
+
+        <button onclick="addSemester()">Add Another Semester</button>
+        <button onclick="removeSemester()">Remove Last Semester</button>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+        <div class="result">
+            <p>Your CGPA: <span id="cgpa">N/A</span></p>
+        </div>
+    </div>
+
+    <script src="js/cgpa-calculator.js"></script>
+</body>
+</html>
