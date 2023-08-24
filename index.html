@@ -36,11 +36,22 @@
             text-align: center;
         }
 
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
         .hero img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            z-index: 0;
         }
 
         .hero::after {
@@ -112,8 +123,10 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero">
-            <h1>SRM IST Academic Success Tools</h1>
-            <p>Empowering students with intuitive tools for academic excellence.</p>
+            <div class="hero-content">
+                <h1>SRM IST Academic Success Tools</h1>
+                <p>Empowering students with intuitive tools for academic excellence.</p>
+            </div>
             <img src="images/mbg.jpg" alt="Students at SRM IST" />
         </section>
 
