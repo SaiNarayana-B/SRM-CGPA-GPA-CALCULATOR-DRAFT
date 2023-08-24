@@ -1,106 +1,104 @@
-/* Define variables for reusable values */
-:root {
-    --light-primary-color: linear-gradient(to right, #007BFF, #00BFFF); /* Gradient for light primary color */
-    --light-primary-hover-color: linear-gradient(to right, #0056b3, #0099cc); /* Gradient for light primary hover color */
-    --dark-primary-color: #222;
-    --dark-primary-hover-color: #444;
-    --background-light: #f3f4f6;
-    --background-dark: #1e1e1e;
-    --text-light: #333;
-    --text-dark: #ddd;
-    --container-background: #ffffff;
-    --container-padding: 30px;
-    --container-border-radius: 8px;
-    --container-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    --container-max-width: 800px;
-    --link-padding: 10px 20px;
-    --link-margin: 10px;
-}
-
-/* Apply styles to the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--background-light);
-    text-align: center;
-    padding: 50px 0;
-    color: var(--text-light);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: var(--background-dark);
-    color: var(--text-dark);
-}
-
-/* Styles for the header */
-header {
-    background: var(--light-primary-color); /* Use gradient background for header */
-    color: #ffffff;
-    padding: 20px 0;
-}
-
-/* Styles for the navigation menu */
-nav {
-    background: var(--light-primary-color); /* Use gradient background for navigation menu */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--light-primary-hover-color);
+/* Apply a background gradient */
+body {
+    background: linear-gradient(to bottom, #007BFF, #00BFFF); /* Gradient background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color for light background */
 }
 
 /* Styles for the container */
 .container {
-    background-color: var(--container-background);
-    padding: var(--container-padding);
-    border-radius: var(--container-border-radius);
-    box-shadow: var(--container-box-shadow);
-    max-width: var(--container-max-width);
+    max-width: 800px;
     margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Styles for links */
-.links a {
+/* Styles for the heading */
+h1 {
+    font-size: 28px;
+    color: #007BFF; /* Primary color */
+}
+
+/* Styles for the subheading */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Styles for the Calculate buttons */
+.calculate-button {
     display: inline-block;
-    padding: var(--link-padding);
-    margin: var(--link-margin);
-    border-radius: 4px;
-    background: var(--light-primary-color); /* Use gradient background for links */
-    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for links */
-.links a:hover {
-    background: var(--light-primary-hover-color); /* Use gradient background for link hover */
+.calculate-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Dark Mode Styles for Links */
-body.dark-mode .links a {
-    background-color: var(--dark-primary-color);
+/* Additional styles for the integrated content */
+.calculator-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
 }
 
-/* Dark Mode Hover effect for links */
-body.dark-mode .links a:hover {
-    background-color: var(--dark-primary-hover-color);
+.calculator-info h2 {
+    color: #007BFF; /* Primary color for headings */
+}
+
+.calculator-info ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Add some left margin for the list */
+}
+
+/* Styles for links within integrated content */
+.calculator-info a {
+    color: #007BFF; /* Primary color for links */
+    text-decoration: underline;
+}
+
+.calculator-info a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Mobile-responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .calculate-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .calculator-info {
+        padding: 15px;
+        font-size: 16px;
+    }
 }
