@@ -1,4 +1,5 @@
-/* General Styles */
+/* Mobile-first styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -10,10 +11,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
 }
 
 a {
@@ -22,17 +21,18 @@ a {
 }
 
 h1, h2, h3 {
+    font-size: 1.2em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 1.2px;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;  /* Allow wrapping for responsiveness */
+    text-align: center;
     background: linear-gradient(145deg, #2a3b4d, #2c3e50);
     box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.2);
 }
@@ -40,137 +40,131 @@ h1, h2, h3 {
 .navbar a {
     color: #ecf0f1;
     padding: 14px 18px;
+    margin: 5px 0;
     border-radius: 10px;
-    transform: translateY(0);
-    transition: transform 0.3s, background-color 0.3s;
 }
 
 .navbar a:hover {
     background-color: #34495e;
-    transform: translateY(-2px);
 }
 
-/* Hero */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('path_to_a_relevant_image.jpg');
     background-size: cover;
     color: white;
-    padding: 100px 0;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.25);
+    padding: 50px 10px;
 }
 
-.hero img {
-    max-width: 100%; /* Ensure responsive width */
-    height: auto;    /* Maintain aspect ratio */
-    border-radius: 20px;
-    transition: transform 0.3s;
-}
-
-.hero img:hover {
-    transform: scale(1.05);
-}
-
-/* Features */
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .feature-box {
+    padding: 20px;
     background: #ffffff;
-    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.2);
 }
 
 .feature-box:hover {
     transform: translateY(-5px);
 }
 
-/* Call to Action */
 .cta {
-    padding: 70px 0;
+    padding: 40px 10px;
     background: linear-gradient(145deg, #333941, #34495e);
     color: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.25);
 }
 
 .links {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-/* ... other styles ... */
-
-/* Media Queries for Responsiveness */
-
-/* For tablets: 768px and up */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        width: 95%;
-    }
-    .features {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+.calculate-button, .cgpa-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    /* Other styles remain unchanged */
 }
 
-/* For mobile devices: 767px and below */
-@media only screen and (max-width: 767px) {
+.testimonials {
+    padding: 30px 10px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    padding: 20px 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Styles for larger screens (e.g., tablets and desktops) */
+@media only screen and (min-width: 768px) {
     .container {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-    }
-
-    .hero {
-        padding: 50px 0;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.2em;
-        margin-bottom: 15px;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-box {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
         padding: 20px;
     }
 
-    .cta {
-        padding: 40px 0;
+    h1, h2, h3 {
+        font-size: inherit;
+        margin-bottom: 20px;
     }
 
-    .links {
-        flex-direction: column;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
+    .navbar a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .feature-box {
+        padding: 30px;
+    }
+
+    .cta {
+        padding: 70px 0;
+    }
+
+    .links {
+        flex-direction: row;
+        gap: 20px;
+    }
+
     .calculate-button, .cgpa-button {
-        margin-bottom: 10px;
+        width: auto;
     }
 
     .testimonials {
-        padding: 30px 0;
+        padding: 60px 0;
     }
 
     footer {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 }
+
