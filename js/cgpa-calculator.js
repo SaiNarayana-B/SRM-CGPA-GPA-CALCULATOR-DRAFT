@@ -67,7 +67,7 @@ function calculateCGPA() {
         totalCredits += semesterCredits;
     }
 
-    const cgpa = (weightedGPA / totalCredits).toFixed(3); // Set precision to 3 decimal places
+    const cgpa = (weightedGPA / totalCredits).toFixed(2); 
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
 
