@@ -101,26 +101,37 @@ a:hover {
 /* Features Section */
 .features {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-wrap: wrap;
     padding: 60px 0;
 }
 
 .feature-box {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px; /* Add space between feature boxes */
     padding: 30px;
     background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    text-align: center; /* Center text */
 }
 
+/* Add creative background gradients to feature boxes */
+.feature-box:nth-child(odd) {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+}
+
+.feature-box:nth-child(even) {
+    background: linear-gradient(45deg, #FFA500, #FF6347);
+}
+
+/* Add more creative styles */
 .feature-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) rotate(3deg); /* Rotate slightly on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .feature-box:before {
@@ -137,6 +148,7 @@ a:hover {
 .feature-box:hover:before {
     width: 100%;
 }
+
 
 /* Call to Action */
 .cta {
