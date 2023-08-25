@@ -15,7 +15,6 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    overflow: hidden;
 }
 
 .container {
@@ -84,6 +83,13 @@ button:hover {
 @media only screen and (max-width: 768px) {
     .container {
         padding: 1rem;
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        max-height: 90vh; /* Reduce the max-height to leave some space for browser chrome */
+    }
+
+    label, input[type="number"], select, #cgpa {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     button {
