@@ -87,10 +87,15 @@ a:hover {
 
 /* Hero */
 .hero {
-    background: linear-gradient(140deg, #0077cc, #005fa3);
-    color: #f6f7fb;
-    padding: 120px 0;
-    text-align: center;\
+    background-image: url('images/mbg.jpg');  /* Adding the background image */
+    background-size: cover;  /* Ensuring the background image covers the entire section */
+    background-repeat: no-repeat;  /* Ensuring the image doesn't repeat */
+    background-position: center center;  /* Positioning the background image to the center */
+    position: relative;  /* Making sure the content (texts) are on top of the background image */
+}
+.hero-content {
+    z-index: 1;
+    position: relative;  /* To ensure z-index takes effect */
 }
 
 /* Features Section */
