@@ -87,10 +87,10 @@ a:hover {
 
 /* Hero */
 .hero {
-    background: linear-gradient(rgba(0, 119, 204, 0.7), rgba(95, 95, 163, 0.7)), 
-                url('images/mbg.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(140deg, #0077cc, #005fa3);
+    color: #f6f7fb;
+    padding: 120px 0;
+    text-align: center;\
 }
 
 /* Features Section */
