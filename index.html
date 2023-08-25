@@ -1,180 +1,96 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GPA & CGPA Calculator</title>
-<link rel="stylesheet" href="css/main.css">
-<style>
-/* Navbar styles */
-.navbar {
-overflow: hidden;
-background-color: #333;
-padding: 10px 0;
-}
-
-.navbar a {
-float: left;
-display: block;
-color: white;
-text-align: center;
-padding: 10px 15px;
-text-decoration: none;
-}
-
-.navbar a:hover {
-background-color: #ddd;
-color: black;
-}
-
-/* Hero styles */
-.hero {
-position: relative;
-background-color: #f9f9f9;
-padding: 40px 0;
-text-align: center;
-}
-
-.hero-content {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #ffffff;
-z-index: 1;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.hero img {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: 0;
-}
-
-.hero::after {
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background-color: rgba(0, 0, 0, 0.3);
-pointer-events: none;
-}
-
-/* Features */
-.features {
-display: flex;
-justify-content: space-between;
-padding: 40px 0;
-}
-
-.feature-box {
-flex: 1;
-margin: 0 20px;
-text-align: center;
-}
-
-/* CTA */
-.cta {
-background-color: #f9f9f9;
-padding: 40px 0;
-text-align: center;
-}
-
-/* Testimonials */
-.testimonials {
-padding: 40px 0;
-}
-
-.testimonial {
-margin-bottom: 20px;
-}
-
-cite {
-display: block;
-font-size: 0.9em;
-margin-top: 10px;
-}
-
-/* Footer */
-footer {
-background-color: #333;
-color: #fff;
-text-align: center;
-padding: 20px 0;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA & CGPA Calculator</title>
+    <link rel="nofollow" href=''>
 </head>
 
 <body>
-<!-- Menu Bar -->
-<div class="navbar">
-<a href="index.html">Home</a>
-<a href="gpa-calculator.html">GPA Calculator</a>
-<a href="cgpa-calculator.html">CGPA Calculator</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
 
-<div class="container">
-<!-- Hero Section -->
-<section class="hero">
-<div class="hero-content">
-<h1>SRM IST Academic Success Tools</h1>
-<p>Empowering students with intuitive tools for academic excellence.</p>
-</div>
-<img src="images/mbg.jpg" alt="Students at SRM IST" />
-</section>
+    <!-- Sidebar Menu -->
+    <div id="sideMenu" class="sidebar">
+        <a href='' class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href=''>Home</a>
+        <a href=''>GPA Calculator</a>
+        <a href=''>CGPA Calculator</a>
+        <a href=''>About</a>
+        <a href=''>Contact</a>
+    </div>
 
-<!-- Features -->
-<section class="features">
-<h2>Why Use Our Calculators?</h2>
-<div class="feature-box">
-<h3>Accurate & Reliable</h3>
-<p>We use the official grading criteria of SRM IST to ensure accurate GPA & CGPA results.</p>
-</div>
-<div class="feature-box">
-<h3>Easy to Use</h3>
-<p>With an intuitive design, you can calculate your GPA & CGPA in a few easy steps.</p>
-</div>
-<div class="feature-box">
-<h3>Plan Ahead</h3>
-<p>Get insights into your academic progress and set goals for your future semesters.</p>
-</div>
-</section>
+    <!-- Menu Button -->
+    <span class="menuicon" onclick="openMenu()">&#9776; Menu</span>
 
-<!-- Call to Action -->
-<section class="cta">
-<h2>Ready to Start?</h2>
-<p>Calculate your GPA or CGPA now and take a step towards academic success!</p>
-<div class="links">
-<a href="gpa-calculator.html" class="calculate-button">Calculate GPA</a>
-<a href="cgpa-calculator.html" class="calculate-button">Calculate CGPA</a>
-</div>
-</section>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>SRM INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+                <p>GPA & CGPA CALCULATOR</p>
+            </div>
+        </section>
 
-<!-- Testimonials -->
-<section class="testimonials">
-<h2>What Students Are Saying</h2>
-<div class="testimonial">
-<p>"This tool has been a game-changer for me. It's so easy to track my progress!"</p>
-<cite>- Sivabalan, 3rd Year AI-ML</cite>
-</div>
-<div class="testimonial">
-<p>"I love how simple it is. It has helped me set my academic goals."</p>
-<cite>- Guru V, 3rd Year ECE</cite>
-</div>
-</section>
+        <!-- Features -->
+        <section class="features">
+            <h2>Why Use Our Calculators?</h2>
+            <div class="feature-box-container">
+                <div class="feature-box">
+                    <h3>Accurate & Reliable</h3>
+                    <p>We use the official grading criteria of SRM IST to ensure accurate GPA & CGPA results.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Easy to Use</h3>
+                    <p>With an intuitive design, you can calculate your GPA & CGPA in a few easy steps without even knowing the credits.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Plan Ahead</h3>
+                    <p>Get insights into your academic progress and set goals for your future semesters.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- Footer -->
-<footer>
-<p>&copy; 2023 Designed by Sai Narayana & Hariesh</p>
-</footer>
-</div>
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to Start?</h2>
+            <p>Calculate your GPA or CGPA now and take a step towards academic success!</p>
+            <div class="links">
+                <a href='' class="calculate-button">Calculate GPA</a>
+                <a href='' class="calculate-button">Calculate CGPA</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Students Are Saying</h2>
+            <div class="testimonial">
+                <p>"This tool has been a game-changer for me. It's so easy to track my progress!"</p>
+                <cite>- Sivabalan, 3rd Year AI-ML</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I love how simple it is. It has helped me set my academic goals."</p>
+                <cite>- Guru V, 3rd Year ECE</cite>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Designed by Sai Narayana & Hariesh</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for the sidebar menu -->
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+        }
+
+        function closeMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+        }
+    </script>
+
 </body>
 
 </html>
