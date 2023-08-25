@@ -7,7 +7,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    background-color: #f5f6f8;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
+    overflow: hidden;
 }
 
 .container {
@@ -53,10 +54,10 @@ select:focus {
 }
 
 button {
-    display: inline-block; /* Changed to inline-block so they can be side by side */
-    margin-right: 1rem; /* Space between buttons */
-    width: auto;  /* Allow buttons to size based on content */
-    padding: 14px 20px; /* Added horizontal padding for aesthetics */
+    display: inline-block;
+    margin-right: 1rem;
+    width: auto;
+    padding: 14px 20px;
     border: none;
     border-radius: 8px;
     background-color: var(--primary-color);
@@ -67,7 +68,7 @@ button {
 }
 
 button:last-child {
-    margin-right: 0; /* Remove right margin for the last button */
+    margin-right: 0;
 }
 
 button:hover {
@@ -78,5 +79,5 @@ button:hover {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 1rem; /* Added some spacing for better layout */
+    margin-top: 1rem;
 }
