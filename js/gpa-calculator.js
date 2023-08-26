@@ -1,7 +1,7 @@
 let regulations = {
     "2018": {
         "CSE": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "English",
                     "credit": 3
@@ -23,7 +23,7 @@ let regulations = {
                     "credit": 5
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese/ Korean",
                     "credit": 3
@@ -49,7 +49,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -79,7 +79,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -113,7 +113,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics for Engineers",
                     "credit": 4
@@ -147,7 +147,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Database Management Systems",
                     "credit": 4
@@ -189,7 +189,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Professional Elective - 5",
                     "credit": 3
@@ -207,7 +207,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Project / Semester Internship",
                     "credit": 10
@@ -215,7 +215,7 @@ let regulations = {
             ]
         },
         "ECE": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Foreign Language (Chinese/ French/ German/ Japanese / Korean)",
                     "credit": 3
@@ -237,7 +237,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "English",
                     "credit": 3
@@ -263,7 +263,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -293,7 +293,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Stochastic Process",
                     "credit": 4
@@ -323,7 +323,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics for Engineers",
                     "credit": 4
@@ -353,7 +353,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "VLSI Design",
                     "credit": 4
@@ -391,7 +391,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Wireless Communications",
                     "credit": 4
@@ -413,7 +413,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Project / Semester Internship",
                     "credit": 10
@@ -421,7 +421,7 @@ let regulations = {
             ]
         },
         "AI-ML": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "English",
                     "credit": 3
@@ -443,7 +443,7 @@ let regulations = {
                     "credit": 5
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese/ Korean",
                     "credit": 3
@@ -469,7 +469,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -499,7 +499,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -533,7 +533,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics for Engineers",
                     "credit": 4
@@ -567,7 +567,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Database Management Systems",
                     "credit": 4
@@ -609,7 +609,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Professional Elective - 5",
                     "credit": 3
@@ -627,7 +627,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Project / Semester Internship",
                     "credit": 10
@@ -637,7 +637,7 @@ let regulations = {
     },
     "2021": {
         "CSE": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -667,7 +667,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -693,7 +693,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -719,7 +719,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -749,7 +749,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -779,7 +779,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -809,7 +809,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -835,7 +835,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -843,7 +843,7 @@ let regulations = {
             ]
         },
         "AI-ML": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -869,7 +869,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -899,7 +899,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -925,7 +925,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -955,7 +955,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -985,7 +985,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -1015,7 +1015,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -1041,7 +1041,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -1049,7 +1049,7 @@ let regulations = {
             ]
         },
         "Big Data Analytics": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -1079,7 +1079,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -1105,7 +1105,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -1131,7 +1131,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Statistics",
                     "credit": 4
@@ -1161,7 +1161,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -1191,7 +1191,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Full Stack Development",
                     "credit": 2
@@ -1221,7 +1221,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -1247,7 +1247,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -1255,7 +1255,7 @@ let regulations = {
             ]
         },
         "Cybersecurity": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -1285,7 +1285,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -1311,7 +1311,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Numerical Methods and Analysis",
                     "credit": 4
@@ -1337,7 +1337,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -1367,7 +1367,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -1397,7 +1397,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -1427,7 +1427,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -1453,7 +1453,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -1461,7 +1461,7 @@ let regulations = {
             ]
         },
         "IT": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -1491,7 +1491,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -1517,7 +1517,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Numerical Methods and Analysis",
                     "credit": 4
@@ -1543,7 +1543,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Queueing Theory",
                     "credit": 4
@@ -1573,7 +1573,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -1603,7 +1603,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -1633,7 +1633,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -1659,7 +1659,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -1667,7 +1667,7 @@ let regulations = {
             ]
         },
         "ECE": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -1689,7 +1689,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -1723,7 +1723,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Boundary Value Problems",
                     "credit": 4
@@ -1757,7 +1757,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Stochastic Process",
                     "credit": 4
@@ -1787,7 +1787,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -1817,7 +1817,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -1851,7 +1851,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -1877,7 +1877,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -1885,7 +1885,7 @@ let regulations = {
             ]
         },
         "Biotechnology": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -1907,7 +1907,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -1941,7 +1941,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Basic Chemical Engineering",
                     "credit": 3
@@ -1979,7 +1979,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Chemical Engineering Principles",
                     "credit": 4
@@ -2013,7 +2013,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Bio-Statistics for Biotechnologists",
                     "credit": 4
@@ -2043,7 +2043,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -2073,7 +2073,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Plant Biotechnology Laboratory",
                     "credit": 2
@@ -2099,7 +2099,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
@@ -2107,7 +2107,7 @@ let regulations = {
             ]
         },
         "EEE": {
-            "1": [
+            "Semester 1": [
                 {
                     "subject": "Communicative English",
                     "credit": 3
@@ -2129,7 +2129,7 @@ let regulations = {
                     "credit": 4
                 }
             ],
-            "2": [
+            "Semester 2": [
                 {
                     "subject": "Chinese / French / German / Japanese / Korean / Spanish",
                     "credit": 3
@@ -2163,7 +2163,7 @@ let regulations = {
                     "credit": 2
                 }
             ],
-            "3": [
+            "Semester 3": [
                 {
                     "subject": "Transforms and Computational Techniques",
                     "credit": 4
@@ -2193,7 +2193,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "4": [
+            "Semester 4": [
                 {
                     "subject": "Probability and Statistics",
                     "credit": 4
@@ -2223,7 +2223,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "5": [
+            "Semester 5": [
                 {
                     "subject": "Discrete Mathematics",
                     "credit": 4
@@ -2253,7 +2253,7 @@ let regulations = {
                     "credit": 1
                 }
             ],
-            "6": [
+            "Semester 6": [
                 {
                     "subject": "Data Science",
                     "credit": 2
@@ -2283,7 +2283,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "7": [
+            "Semester 7": [
                 {
                     "subject": "Behavioral Psychology",
                     "credit": 3
@@ -2309,7 +2309,7 @@ let regulations = {
                     "credit": 3
                 }
             ],
-            "8": [
+            "Semester 8": [
                 {
                     "subject": "Major Project / Major Project / Internship#",
                     "credit": 15
