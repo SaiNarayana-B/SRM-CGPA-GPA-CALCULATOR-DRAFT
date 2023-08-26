@@ -2420,6 +2420,11 @@ function calculateGPA() {
     document.getElementById("result").innerText = `Your GPA is: ${gpa.toFixed(3)}`;
 }
 
+
+if (window.location.pathname.includes("index.html")) {
+    updateCourses();
+}
+
 // If on subjects.html, populate subjects
 if (window.location.pathname.includes("subjects.html")) {
     populateSubjects();
