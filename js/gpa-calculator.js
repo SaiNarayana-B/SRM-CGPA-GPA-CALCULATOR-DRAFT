@@ -2421,7 +2421,7 @@ function calculateGPA() {
 }
 
 
-if (window.location.pathname.includes("index.html")) {
+if (window.location.pathname.includes("gpa-calculator.html")) {
     updateCourses();
 }
 
