@@ -2421,11 +2421,15 @@ function calculateGPA() {
 }
 
 
-if (window.location.pathname.includes("gpa-calculator.html")) {
-    updateCourses();
-}
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if the current page is the main page (gpa-calculator.html)
+    if (window.location.pathname.includes("gpa-calculator.html")) {
+        updateCourses();
+    }
 
-// If on subjects.html, populate subjects
-if (window.location.pathname.includes("subjects.html")) {
-    populateSubjects();
-}
+    // If on subjects.html, populate subjects
+    if (window.location.pathname.includes("subjects.html")) {
+        populateSubjects();
+    }
+});
+
