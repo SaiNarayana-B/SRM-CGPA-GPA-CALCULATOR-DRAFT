@@ -1,116 +1,116 @@
 const regulations = {
     "2018": {
         "CSE": {
-            "Semester 1": 20,
-            "Semester 2": 21,
-            "Semester 3": 24,
-            "Semester 4": 26,
-            "Semester 5": 22,
-            "Semester 6": 25,
-            "Semester 7": 12,
-            "Semester 8": 10
+            "1": 20,
+            "2": 21,
+            "3": 24,
+            "4": 26,
+            "5": 22,
+            "6": 25,
+            "7": 12,
+            "8": 10
         },
         "ECE": {
-            "Semester 1": 20,
-            "Semester 2": 21,
-            "Semester 3": 24,
-            "Semester 4": 22,
-            "Semester 5": 23,
-            "Semester 6": 24,
-            "Semester 7": 16,
-            "Semester 8": 10
+            "1": 20,
+            "2": 21,
+            "3": 24,
+            "4": 22,
+            "5": 23,
+            "6": 24,
+            "7": 16,
+            "8": 10
         },
         "AI-ML": {
-            "Semester 1": 20,
-            "Semester 2": 21,
-            "Semester 3": 24,
-            "Semester 4": 26,
-            "Semester 5": 22,
-            "Semester 6": 25,
-            "Semester 7": 12,
-            "Semester 8": 10
+            "1": 20,
+            "2": 21,
+            "3": 24,
+            "4": 26,
+            "5": 22,
+            "6": 25,
+            "7": 12,
+            "8": 10
         }
     },
     "2021": {
         "CSE": {
-            "Semester 1": 22,
-            "Semester 2": 21,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 20,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 22,
+            "2": 21,
+            "3": 23,
+            "4": 23,
+            "5": 21,
+            "6": 20,
+            "7": 18,
+            "8": 15
         },
         "AI-ML": {
-            "Semester 1": 22,
-            "Semester 2": 21,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 20,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 22,
+            "2": 21,
+            "3": 23,
+            "4": 23,
+            "5": 21,
+            "6": 20,
+            "7": 18,
+            "8": 15
         },
         "Big Data Analytics": {
-            "Semester 1": 22,
-            "Semester 2": 21,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 20,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 22,
+            "2": 21,
+            "3": 23,
+            "4": 23,
+            "5": 21,
+            "6": 20,
+            "7": 18,
+            "8": 15
         },
         "Cybersecurity": {
-            "Semester 1": 22,
-            "Semester 2": 21,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 20,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 22,
+            "2": 21,
+            "3": 23,
+            "4": 23,
+            "5": 21,
+            "6": 20,
+            "7": 18,
+            "8": 15
         },
         "IT": {
-            "Semester 1": 22,
-            "Semester 2": 21,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 20,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 22,
+            "2": 21,
+            "3": 23,
+            "4": 23,
+            "5": 21,
+            "6": 20,
+            "7": 18,
+            "8": 15
         },
         "ECE": {
-            "Semester 1": 18,
-            "Semester 2": 25,
-            "Semester 3": 24,
-            "Semester 4": 21,
-            "Semester 5": 20,
-            "Semester 6": 22,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 18,
+            "2": 25,
+            "3": 24,
+            "4": 21,
+            "5": 20,
+            "6": 22,
+            "7": 18,
+            "8": 15
         },
         "Biotechnology": {
-            "Semester 1": 18,
-            "Semester 2": 25,
-            "Semester 3": 23,
-            "Semester 4": 23,
-            "Semester 5": 22,
-            "Semester 6": 19,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 18,
+            "2": 25,
+            "3": 23,
+            "4": 23,
+            "5": 22,
+            "6": 19,
+            "7": 18,
+            "8": 15
         },
         "EEE": {
-            "Semester 1": 18,
-            "Semester 2": 25,
-            "Semester 3": 22,
-            "Semester 4": 23,
-            "Semester 5": 21,
-            "Semester 6": 21,
-            "Semester 7": 18,
-            "Semester 8": 15
+            "1": 18,
+            "2": 25,
+            "3": 22,
+            "4": 23,
+            "5": 21,
+            "6": 21,
+            "7": 18,
+            "8": 15
         }
     }
 }
