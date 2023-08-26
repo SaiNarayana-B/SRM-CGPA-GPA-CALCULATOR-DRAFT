@@ -126,6 +126,8 @@ for (const course in regulations[defaultRegulation]) {
     courseSelect.appendChild(option);
 }
 
+calculateCGPA();
+
 document.getElementById('regulation').addEventListener('change', function() {
     const selectedRegulation = this.value;
     const courseSelect = document.getElementById('course');
@@ -137,6 +139,13 @@ document.getElementById('regulation').addEventListener('change', function() {
         option.textContent = course;
         courseSelect.appendChild(option);
     }
+    
+    // After repopulating the courses, trigger a change event on the course select element
+    const event = new Event('change', { bubbles: true });
+    courseSelect.dispatchEvent(event);
+
+    // Call the calculateCGPA function to calculate and display CGPA for the selected regulation
+    calculateCGPA();
 });
 
 let semesterCount = 1; 
