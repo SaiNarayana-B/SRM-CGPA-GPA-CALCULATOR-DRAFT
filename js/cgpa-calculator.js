@@ -161,11 +161,9 @@ function calculateCGPA() {
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
-
     const cgpa = (weightedGPA / totalCredits).toFixed(2); 
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
-
     // Make the CGPA visible
     cgpaElement.style.opacity = "1";
     cgpaElement.style.transform = "translateY(0)";
