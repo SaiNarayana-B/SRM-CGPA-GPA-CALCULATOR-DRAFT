@@ -115,10 +115,13 @@ const regulations = {
     }
 }
 
-const defaultRegulation = document.getElementById('regulation').value;
+// Set the default regulation and course
+const defaultRegulation = '2018'; // Change this to your default regulation
+const defaultCourse = Object.keys(regulations[defaultRegulation])[0]; // Change this to your default course
+
+// Populate the course dropdown initially for the default regulation
 const courseSelect = document.getElementById('course');
 courseSelect.innerHTML = '';
-
 for (const course in regulations[defaultRegulation]) {
     const option = document.createElement('option');
     option.value = course;
@@ -126,11 +129,13 @@ for (const course in regulations[defaultRegulation]) {
     courseSelect.appendChild(option);
 }
 
-calculateCGPA();
+// Set the default selected option for regulation and course
+document.getElementById('regulation').value = defaultRegulation;
+courseSelect.value = defaultCourse;
 
+// Add an event listener to the regulation select element
 document.getElementById('regulation').addEventListener('change', function() {
     const selectedRegulation = this.value;
-    const courseSelect = document.getElementById('course');
     courseSelect.innerHTML = '';  // Clear previous options
 
     for (const course in regulations[selectedRegulation]) {
@@ -139,16 +144,13 @@ document.getElementById('regulation').addEventListener('change', function() {
         option.textContent = course;
         courseSelect.appendChild(option);
     }
-    
-    // After repopulating the courses, trigger a change event on the course select element
+
+    // Trigger a change event on the course select element to recalculate CGPA
     const event = new Event('change', { bubbles: true });
     courseSelect.dispatchEvent(event);
-
-    // Call the calculateCGPA function to calculate and display CGPA for the selected regulation
-    calculateCGPA();
 });
 
-let semesterCount = 1; 
+let semesterCount = 1;
 
 function addSemester() {
     semesterCount++;
@@ -186,13 +188,13 @@ function calculateCGPA() {
             return;  // Exit the function if invalid data is found.
         }
 
-        const semesterCredits = regulations[selectedRegulation][selectedCourse][i];
+        const semesterCredits = regulations[selectedRegulation][selectedCourse][`Semester ${i}`];
 
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
 
-    const cgpa = (weightedGPA / totalCredits).toFixed(2); 
+    const cgpa = (weightedGPA / totalCredits).toFixed(2);
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
 
@@ -200,3 +202,6 @@ function calculateCGPA() {
     cgpaElement.style.opacity = "1";
     cgpaElement.style.transform = "translateY(0)";
 }
+
+// Call the calculateCGPA function initially to calculate and display CGPA
+calculateCGPA();
