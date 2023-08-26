@@ -135,6 +135,14 @@ courseSelect.value = defaultCourse;
 
 let semesterCount = 1;
 
+// Flag to check if the user has interacted with the page
+let userInteracted = false;
+
+// Add an event listener to indicate that the user has interacted with the page
+document.addEventListener('input', function() {
+    userInteracted = true;
+});
+
 function addSemester() {
     semesterCount++;
     if (semesterCount <= 8) {
@@ -157,6 +165,10 @@ function removeSemester() {
 }
 
 function calculateCGPA() {
+    if (!userInteracted) {
+        return; // Do not calculate on page load
+    }
+
     let weightedGPA = 0;
     let totalCredits = 0;
 
@@ -208,8 +220,10 @@ document.getElementById('regulation').addEventListener('change', function() {
     
     // Clear the CGPA result
     document.getElementById("cgpa").textContent = "";
+
+    // Call calculateCGPA when regulation changes
+    calculateCGPA();
 });
 
 // Initialize the page with the default calculation
 calculateCGPA();
-
