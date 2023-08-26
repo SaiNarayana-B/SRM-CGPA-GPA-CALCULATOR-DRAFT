@@ -115,34 +115,18 @@ const regulations = {
     }
 }
 
-// Set the default regulation and course
-const defaultRegulation = '2018'; // Change this to your default regulation
-const defaultCourse = Object.keys(regulations[defaultRegulation])[0]; // Change this to your default course
-
-// Populate the course dropdown initially for the default regulation
-const courseSelect = document.getElementById('course');
-courseSelect.innerHTML = '';
-for (const course in regulations[defaultRegulation]) {
-    const option = document.createElement('option');
-    option.value = course;
-    option.textContent = course;
-    courseSelect.appendChild(option);
-}
-
-// Set the default selected option for regulation and course
-document.getElementById('regulation').value = defaultRegulation;
-courseSelect.value = defaultCourse;
-
-let semesterCount = 1;
-
-// Flag to check if the user has interacted with the page
-let userInteracted = false;
-
-// Add an event listener to indicate that the user has interacted with the page
-document.addEventListener('input', function() {
-    userInteracted = true;
+document.getElementById('regulation').addEventListener('change', function() {
+    const selectedRegulation = this.value;
+    const courseSelect = document.getElementById('course');
+    courseSelect.innerHTML = '';  // Clear previous options
+    for (const course in regulations[selectedRegulation]) {
+        const option = document.createElement('option');
+        option.value = course;
+        option.textContent = course;
+        courseSelect.appendChild(option);
+    }
 });
-
+let semesterCount = 1; 
 function addSemester() {
     semesterCount++;
     if (semesterCount <= 8) {
@@ -155,7 +139,6 @@ function addSemester() {
         semesterDiv.appendChild(newInput);
     }
 }
-
 function removeSemester() {
     if (semesterCount > 1) {
         const semesterDiv = document.getElementById("additional-semesters");
@@ -163,33 +146,23 @@ function removeSemester() {
         semesterCount--;
     }
 }
-
 function calculateCGPA() {
-    if (!userInteracted) {
-        return; // Do not calculate on page load
-    }
-
     let weightedGPA = 0;
     let totalCredits = 0;
-
     const selectedRegulation = document.getElementById('regulation').value;
     const selectedCourse = document.getElementById('course').value;
-
     for (let i = 1; i <= semesterCount; i++) {
         const semesterGPA = parseFloat(document.getElementById(`semester${i}`).value);
-
         if (isNaN(semesterGPA)) {
             alert(`Please enter a valid GPA for Semester ${i}`);
             return;  // Exit the function if invalid data is found.
         }
-
-        const semesterCredits = regulations[selectedRegulation][selectedCourse][`Semester ${i}`];
-
+        const semesterCredits = regulations[selectedRegulation][selectedCourse][i];
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
 
-    const cgpa = (weightedGPA / totalCredits).toFixed(2);
+    const cgpa = (weightedGPA / totalCredits).toFixed(2); 
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
 
@@ -197,33 +170,3 @@ function calculateCGPA() {
     cgpaElement.style.opacity = "1";
     cgpaElement.style.transform = "translateY(0)";
 }
-
-// Add an event listener to the regulation select element
-document.getElementById('regulation').addEventListener('change', function() {
-    const selectedRegulation = this.value;
-    courseSelect.innerHTML = '';  // Clear previous options
-
-    for (const course in regulations[selectedRegulation]) {
-        const option = document.createElement('option');
-        option.value = course;
-        option.textContent = course;
-        courseSelect.appendChild(option);
-    }
-
-    // Reset semesterCount and additional semester inputs
-    semesterCount = 1;
-    const semesterDiv = document.getElementById("additional-semesters");
-    semesterDiv.innerHTML = `
-        <label for="semester1">Semester 1 GPA:</label>
-        <input type="number" id="semester1" step="0.01" min="0" max="4.0" required>
-    `;
-    
-    // Clear the CGPA result
-    document.getElementById("cgpa").textContent = "";
-
-    // Call calculateCGPA when regulation changes
-    calculateCGPA();
-});
-
-// Initialize the page with the default calculation
-calculateCGPA();
