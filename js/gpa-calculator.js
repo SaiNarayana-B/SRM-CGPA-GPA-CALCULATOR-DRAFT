@@ -2423,7 +2423,7 @@ function calculateGPA() {
 
 
 // Check if the current page is the main page (gpa-calculator.html)
-if (window.location.pathname.includes("gpa-calculator.html")) {
+if (window.location.pathname.includes("gpa-calculator")) {
     updateCourses();
 }
 
