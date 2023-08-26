@@ -133,38 +133,7 @@ for (const course in regulations[defaultRegulation]) {
 document.getElementById('regulation').value = defaultRegulation;
 courseSelect.value = defaultCourse;
 
-// Flag to check if the user has interacted with the page
-let userInteracted = false;
-
-// Add an event listener to the regulation select element
-document.getElementById('regulation').addEventListener('change', function() {
-    const selectedRegulation = this.value;
-    courseSelect.innerHTML = '';  // Clear previous options
-
-    for (const course in regulations[selectedRegulation]) {
-        const option = document.createElement('option');
-        option.value = course;
-        option.textContent = course;
-        courseSelect.appendChild(option);
-    }
-
-    // Trigger a change event on the course select element to recalculate CGPA
-    const event = new Event('change', { bubbles: true });
-    courseSelect.dispatchEvent(event);
-
-    // If the user has interacted with the page, calculate CGPA
-    if (userInteracted) {
-        calculateCGPA();
-    }
-});
-
-// Add an event listener to indicate that the user has interacted with the page
-document.addEventListener('input', function() {
-    userInteracted = true;
-});
-
 let semesterCount = 1;
-
 
 function addSemester() {
     semesterCount++;
@@ -217,5 +186,30 @@ function calculateCGPA() {
     cgpaElement.style.transform = "translateY(0)";
 }
 
-// Call the calculateCGPA function initially to calculate and display CGPA
+// Add an event listener to the regulation select element
+document.getElementById('regulation').addEventListener('change', function() {
+    const selectedRegulation = this.value;
+    courseSelect.innerHTML = '';  // Clear previous options
+
+    for (const course in regulations[selectedRegulation]) {
+        const option = document.createElement('option');
+        option.value = course;
+        option.textContent = course;
+        courseSelect.appendChild(option);
+    }
+
+    // Reset semesterCount and additional semester inputs
+    semesterCount = 1;
+    const semesterDiv = document.getElementById("additional-semesters");
+    semesterDiv.innerHTML = `
+        <label for="semester1">Semester 1 GPA:</label>
+        <input type="number" id="semester1" step="0.01" min="0" max="4.0" required>
+    `;
+    
+    // Clear the CGPA result
+    document.getElementById("cgpa").textContent = "";
+});
+
+// Initialize the page with the default calculation
 calculateCGPA();
+
