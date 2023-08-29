@@ -80,6 +80,7 @@ button:hover {
     margin-top: 1rem;
 }
 
+/* Media Query for Mobile Screens */
 @media only screen and (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -99,30 +100,38 @@ button:hover {
 }
 
 /* Media Query for large screens */
-@media only screen and (min-width: 769px) {
-    body {
-        justify-content: flex-start;
-        padding-top: 2rem;
-    }
-
+@media only screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;
         padding: 4rem;
-        display: grid;
-        gap: 3rem;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    label, input[type="number"], select {
-        font-size: 1.2rem;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    label, select, input[type="number"] {
+        font-size: 1.5rem;
+        margin: 1rem 0;
     }
 
     button {
-        padding: 16px 24px;
-        font-size: 1.2rem;
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        margin: 1rem;
     }
 
-    #cgpa {
-        font-size: 3rem;
+    .result {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
     }
 }
