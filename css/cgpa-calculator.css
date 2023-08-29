@@ -83,8 +83,8 @@ button:hover {
 @media only screen and (max-width: 768px) {
     .container {
         padding: 1rem;
-        overflow-y: auto; /* Enable vertical scrolling if content overflows */
-        max-height: 90vh; /* Reduce the max-height to leave some space for browser chrome */
+        overflow-y: auto;
+        max-height: 90vh;
     }
 
     label, input[type="number"], select, #cgpa {
@@ -95,5 +95,34 @@ button:hover {
     button {
         width: 100%;
         margin: 10px 0;
+    }
+}
+
+/* Media Query for large screens */
+@media only screen and (min-width: 769px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding: 4rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    label, input[type="number"], select {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 16px 24px;
+        font-size: 1.2rem;
+    }
+
+    #cgpa {
+        font-size: 3rem;
     }
 }
