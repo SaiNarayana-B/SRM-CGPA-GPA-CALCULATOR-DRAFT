@@ -175,6 +175,7 @@ footer {
 
     footer {
         width: 100%; /* Adjust the width for mobile screens */
+        height: 130px;
     }
 
     .social-menu ul {
