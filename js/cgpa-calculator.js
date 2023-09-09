@@ -115,9 +115,14 @@ const regulations = {
     }
 }
 
-document.getElementById('regulation').addEventListener('change', function() {
+
+// Select the regulation and course elements
+const regulationSelect = document.getElementById('regulation');
+const courseSelect = document.getElementById('course');
+
+// Populate the course options when the regulation changes
+regulationSelect.addEventListener('change', function() {
     const selectedRegulation = this.value;
-    const courseSelect = document.getElementById('course');
     courseSelect.innerHTML = '';  // Clear previous options
     for (const course in regulations[selectedRegulation]) {
         const option = document.createElement('option');
@@ -127,7 +132,11 @@ document.getElementById('regulation').addEventListener('change', function() {
     }
 });
 
-let semesterCount = 1; 
+// Manually trigger the change event to populate courses for the initial selected regulation
+regulationSelect.dispatchEvent(new Event('change'));
+
+let semesterCount = 1;
+
 function addSemester() {
     semesterCount++;
     if (semesterCount <= 8) {
@@ -165,8 +174,8 @@ function calculateCGPA() {
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
-    
-    const cgpa = (weightedGPA / totalCredits).toFixed(2); 
+
+    const cgpa = (weightedGPA / totalCredits).toFixed(2);
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
     // Make the CGPA visible
