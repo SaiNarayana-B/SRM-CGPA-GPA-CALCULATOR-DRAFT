@@ -173,6 +173,10 @@ footer {
         margin: 10px 0;
     }
 
+    footer {
+        width: 100%; /* Adjust the width for mobile screens */
+    }
+
     .social-menu ul {
         flex-direction: column;
         align-items: center;
@@ -182,3 +186,4 @@ footer {
         margin: 5px 0;
     }
 }
+
