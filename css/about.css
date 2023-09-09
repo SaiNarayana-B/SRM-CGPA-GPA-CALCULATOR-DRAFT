@@ -115,9 +115,9 @@ footer {
     text-align: center;
     color: #ecf0f1;
     width: 100%;
-    position: fixed;
+    position: bottom;
     bottom: 0;
-    height: 60px; /* Adjust the height as needed */
+    height: 30px; /* Adjust the height as needed */
     backdrop-filter: blur(5px);
 }
 
