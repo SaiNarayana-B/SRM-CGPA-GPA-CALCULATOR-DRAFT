@@ -114,10 +114,10 @@ footer {
     padding: 20px;
     text-align: center;
     color: #ecf0f1;
-    width: 100%;
+    width: 75%;
     position: bottom;
     bottom: 0;
-    height: 120px; /* Adjust the height as needed */
+    height: 130px; /* Adjust the height as needed */
     backdrop-filter: blur(5px);
 }
 
