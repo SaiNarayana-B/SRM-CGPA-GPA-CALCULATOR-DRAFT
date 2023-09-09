@@ -107,10 +107,11 @@ nav a:hover {
     cursor: pointer;
 }
 
-.closebtn::before {
-    font-size: 80px; /* Increase the icon size */
-    content: "\2630"; /* The Unicode character for the hamburger icon */
+.menuicon {
+    font-size: 36px; 
+    cursor: pointer;
 }
+
 
 /* Main Content Styles */
 .main-content {
