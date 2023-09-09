@@ -114,8 +114,10 @@ nav a:hover {
     top: 20px; /* Adjust the vertical position */
     left: 20px; /* Adjust the horizontal position */
     z-index: 2; /* Ensure the icon is above other content */
+    background-color: rgba(255, 255, 255, 0.5); /* Add a semi-transparent white background */
+    border-radius: 50%; /* Make the background circular */
+    padding: 10px; /* Adjust padding for spacing */
 }
-
 
 /* Main Content Styles */
 .main-content {
