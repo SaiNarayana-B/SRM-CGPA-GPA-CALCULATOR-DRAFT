@@ -126,6 +126,7 @@ document.getElementById('regulation').addEventListener('change', function() {
         courseSelect.appendChild(option);
     }
 });
+
 let semesterCount = 1; 
 function addSemester() {
     semesterCount++;
@@ -139,6 +140,7 @@ function addSemester() {
         semesterDiv.appendChild(newInput);
     }
 }
+
 function removeSemester() {
     if (semesterCount > 1) {
         const semesterDiv = document.getElementById("additional-semesters");
@@ -146,11 +148,13 @@ function removeSemester() {
         semesterCount--;
     }
 }
+
 function calculateCGPA() {
     let weightedGPA = 0;
     let totalCredits = 0;
     const selectedRegulation = document.getElementById('regulation').value;
     const selectedCourse = document.getElementById('course').value;
+
     for (let i = 1; i <= semesterCount; i++) {
         const semesterGPA = parseFloat(document.getElementById(`semester${i}`).value);
         if (isNaN(semesterGPA)) {
@@ -161,10 +165,14 @@ function calculateCGPA() {
         weightedGPA += semesterGPA * semesterCredits;
         totalCredits += semesterCredits;
     }
+    
     const cgpa = (weightedGPA / totalCredits).toFixed(2); 
     const cgpaElement = document.getElementById("cgpa");
     cgpaElement.textContent = `${cgpa}`;
     // Make the CGPA visible
     cgpaElement.style.opacity = "1";
     cgpaElement.style.transform = "translateY(0)";
+
+    // Scroll to the CGPA results section
+    cgpaElement.scrollIntoView({ behavior: 'smooth' });
 }
