@@ -20,7 +20,7 @@ In the CGPA Calculator:
 
 ## Getting Started
 
-To use the SRM IST GPA & CGPA Calculator, simply visit the website at [https://cgpa-calculator-srm.netlify.app/](https://cgpa-calculator-srm.netlify.app/). 
+To use the SRM IST GPA & CGPA Calculator, simply visit the website at [https://srmcgpa.netlify.app/](https://srmcgpa.netlify.app/). 
 
 No login or registration is required.
 
