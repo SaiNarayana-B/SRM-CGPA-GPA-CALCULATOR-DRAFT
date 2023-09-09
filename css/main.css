@@ -109,11 +109,11 @@ nav a:hover {
 .menuicon {
     font-size: 36px;
     cursor: pointer;
-    color: #000000; 
+    color: rgba(0, 0, 0, 0.7); /* Use a semi-transparent black color for the menu icon */
     position: absolute;
-    top: 20px;
-    left: 20px; 
-    z-index: 2; 
+    top: 20px; /* Adjust the vertical position */
+    left: 20px; /* Adjust the horizontal position */
+    z-index: 2; /* Ensure the icon is above other content */
 }
 
 
