@@ -1,8 +1,8 @@
-# SRM IST GPA & CGPA Calculator
+# SRM GPA CGPA Calculator
 
 ## Overview
 
-The SRM IST GPA & CGPA Calculator is a specialized web application tailored for students at SRM Institute of Science and Technology (SRM IST), Trichy Campus. It simplifies academic performance tracking by allowing students to calculate their Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) conveniently, with the following features:
+The SRM CGPA GPA Calculator is a specialized web application tailored for students at SRM Institute of Science and Technology (SRM IST), Trichy Campus. It simplifies academic performance tracking by allowing students to calculate their Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) conveniently, with the following features:
 
 - **Regulation Selection:** Users can choose between the 2018 and 2021 regulations.
 - **Course Selection:** Users can select their respective course from the preloaded options available at SRM IST, Trichy Campus.
