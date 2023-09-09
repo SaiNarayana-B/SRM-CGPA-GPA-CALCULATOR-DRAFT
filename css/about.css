@@ -186,5 +186,7 @@ footer {
     .social-menu ul li {
         margin: 5px 0;
     }
+    body {
+        margin: 0;
+    }
 }
-
